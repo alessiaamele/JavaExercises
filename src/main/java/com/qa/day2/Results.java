@@ -3,11 +3,11 @@ package com.qa.day2;
 public class Results {
 
     public static void main(String[] args) {
-        System.out.println(Method1(120,130,140));
-        System.out.println(Method2(120,130,140));
+        System.out.println(Method1day2(120,140,140));
+        System.out.println(Method2day2(120,130,140));
     }
 
-    public static int Method1(int chemGrade, int phyGrade, int bioGrade){
+    public static int Method1day2(int chemGrade, int phyGrade, int bioGrade){
         if (chemGrade/150 <60 || phyGrade/150 <60 || bioGrade/150<60){
             System.out.println( "You failed");
             return 0;
@@ -20,7 +20,7 @@ public class Results {
         return totalGrade;
     }
 
-    public static int Method2(int chemGrade, int phyGrade, int bioGrade){
+    public static int Method2day2(int chemGrade, int phyGrade, int bioGrade){
         int totalGrade = chemGrade + phyGrade + bioGrade;
         if (chemGrade<60 || phyGrade<60 || bioGrade<60){
             System.out.println("You failed");
@@ -32,11 +32,12 @@ public class Results {
             return overallGrade;
         }
         else{
-            System.out.println("You failed")
+            System.out.println("You failed");
+            return 0;
         }
     }
 
-    public static int Method2(int chemGrade, int phyGrade, int bioGrade){
+    public static int Method3day2(int chemGrade, int phyGrade, int bioGrade){
         int totalGrade = chemGrade + phyGrade + bioGrade;
         int overallGrade = totalGrade*100/450;
         System.out.println("Overall grade:");
