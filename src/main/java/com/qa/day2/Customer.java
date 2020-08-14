@@ -1,6 +1,5 @@
 package com.qa.day2;
 
-public class ClassExample {
 
     public class Customer {
         private String firstName;
@@ -27,4 +26,4 @@ public class ClassExample {
             this.firstName = firstName;
         }
     }
-}
+
