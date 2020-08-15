@@ -3,9 +3,10 @@ package com.qa.day6;
 public class TemperatureConverter {
     public static void main(String[] args) {
         System.out.println(convertFahrenheitToCelsius(100));
+        System.out.println(convertCelsiusToFahrenheit(100));
     }
 
-        public static double convertFahrenheitToCelsius(double fahrenheit) {
+        public double convertFahrenheitToCelsius(double fahrenheit) {
             return (5.0 / 9.0) * (fahrenheit - 32.0);
         }
 
